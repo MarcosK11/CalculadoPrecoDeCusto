@@ -1,8 +1,7 @@
-﻿using RetailApp.Utility;
-using RetailApp.ViewModels;
-using System;
+﻿using System;
 using System.Windows.Forms;
-
+using RetailApp.Utility;
+using RetailApp.ViewModels.Fiscal;
 
 
 namespace RetailApp.Desktop.UI
@@ -43,6 +42,25 @@ namespace RetailApp.Desktop.UI
         {
             string xmlContent = FileUtility.GetStringFromXml();
             nfeProc nfeProc = XmlUtility.XmlToClass<nfeProc>(xmlContent);
+
+            CarregaDados(nfeProc); //carrega os dados nos campos da tela
+        }
+
+
+        private void CarregaDados(nfeProc nfeProc)
+        {
+            //ajuste do campo data
+            string dataCompleta = nfeProc.NFe.infNFe.ide.dhEmi;
+            DateTime dataEmi = DateTime.Parse(dataCompleta);
+            string dataFormatada = dataEmi.ToString("yyyy-MM-dd");
+
+            //ajuste chave de acesso NFe
+            string chaveAcesso = nfeProc.NFe.infNFe.Id;
+            string chaveNumerica = chaveAcesso.Substring(3);
+
+            NumberNFe.Text = nfeProc.NFe.infNFe.ide.nNF;
+            Date.Text = dataFormatada;
+            Chave.Text = chaveNumerica;
         }
     }
 }

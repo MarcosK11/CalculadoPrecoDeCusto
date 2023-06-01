@@ -7,7 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RetailApp.ViewModels", "Ret
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RetailApp.Utility", "RetailApp.Utility\RetailApp.Utility.csproj", "{44C3C517-5D90-4DFF-BED8-C941E5FADEA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetailApp.Desktop.UI", "RetailApp.Desktop.UI\RetailApp.Desktop.UI.csproj", "{B5CAF2F8-4454-4776-B7A0-959C996E9BE5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RetailApp.Desktop.UI", "RetailApp.Desktop.UI\RetailApp.Desktop.UI.csproj", "{B5CAF2F8-4454-4776-B7A0-959C996E9BE5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{44C3C517-5D90-4DFF-BED8-C941E5FADEA7} = {44C3C517-5D90-4DFF-BED8-C941E5FADEA7}
+		{E93B1940-2B73-47DD-84B9-03745132B679} = {E93B1940-2B73-47DD-84B9-03745132B679}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -16,9 +20,11 @@ Global
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{E93B1940-2B73-47DD-84B9-03745132B679}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E93B1940-2B73-47DD-84B9-03745132B679}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E93B1940-2B73-47DD-84B9-03745132B679}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E93B1940-2B73-47DD-84B9-03745132B679}.Release|Any CPU.Build.0 = Release|Any CPU
 		{44C3C517-5D90-4DFF-BED8-C941E5FADEA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44C3C517-5D90-4DFF-BED8-C941E5FADEA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44C3C517-5D90-4DFF-BED8-C941E5FADEA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44C3C517-5D90-4DFF-BED8-C941E5FADEA7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B5CAF2F8-4454-4776-B7A0-959C996E9BE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU

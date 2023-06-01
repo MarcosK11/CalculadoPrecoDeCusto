@@ -13,7 +13,7 @@ namespace RetailApp.ViewModels.Fiscal
         public enderEmit enderEmit { get; set; } = default!;
         public string IE { get; set; } = default!;
         public string IEST { get; set; } = default!;   
-        public int CRT { get; set; } 
+        public int CRT { get; set; }
 
     }
 }

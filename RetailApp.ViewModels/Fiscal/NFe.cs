@@ -1,9 +1,7 @@
-﻿using RetailApp.ViewModels.Fiscal;
-
-namespace RetailApp.ViewModels
+﻿namespace RetailApp.ViewModels.Fiscal
 {
     public class NFe
     {
-        public InfNFe infNFe { get; set; } = default!;
+        public infNFe infNFe { get; set; } = default!;
     }
 }
