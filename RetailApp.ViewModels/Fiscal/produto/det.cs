@@ -6,8 +6,8 @@ namespace RetailApp.ViewModels.Fiscal
     {
         [XmlAttribute("nItem")]
         public int nItem { get; set; }
-        public prod prod { get; set; } 
-        public imposto imposto { get; set; } 
+        public prod prod { get; set; } = default!;
+        public imposto imposto { get; set; } = default!;
 
     }
 }

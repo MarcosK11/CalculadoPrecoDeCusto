@@ -9,9 +9,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-	 <ProjectReference Include="..\RetailApp.Utility\RetailApp.Utility.csproj" />
-	 <ProjectReference Include="..\RetailApp.ViewModels\RetailApp.ViewModels.csproj" />
-    <Compile Update="Form1.cs">
+	 <ProjectReference Include="..\RetailApp.Utility\Calculadora.Utility.csproj" />
+	 <ProjectReference Include="..\RetailApp.ViewModels\Calculadora.XML.csproj" />
+    <Compile Update="MenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
